@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <style>
+        .main {
+            margin-top: 95px;
+            border-style: solid;
+            border-width: 3px;
+            border-color: rgba(0,0,0,.2);
+            border-radius: 9px;
+            margin-left: 10%;
+            width: 54%;
+            align-self: center;
+            background-color: rgba(0,0,0,.5);
+            color: white;
+            float: left;
+            display: inline-block;
+        }
+
+            .main input, button {
+                width: 90%;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+
+            .main button {
+                background-color: red;
+                color: white;
+                -webkit-transition: all 0.6s ease;
+                -moz-transition: all 0.1s ease;
+                -ms-transition: all 0.1s ease;
+                transition: all 0.1s ease;
+                height: 33px;
+                width: 98px;
+                border: none;
+                border-radius: 7px;
+                margin-bottom: 12px;
+            }
+
+                .main button:hover {
+                    height: 39px;
+                    width: 104px;
+                }
+                .bottom{
+                    margin-top:575px;
+                }
+    </style>
+    <script type="text/javascript" src="js/job.js"></script>
+</head>
+<body>
+    <div class="topnav" style=" position: relative;">
+        <a style="float: right;" href="about.html">About</a>
+        <a style="float: right;" href="contact.html">Contact Us</a>
+        <a style="float: right;" href="job.html">Careers</a>
+        <a style="float: right;" href="services.html">Our Services</a>
+
+        <a style="float: right;" href="main.html">Home</a>
+    </div>
+    <div id="grand">
+        <a href="main.html"><img src="images/grand.jpeg" ;" /></a>
+    </div>
+    <div class="main">
+        <h1 style="color: rgb(238,232,170)">Wedding</h1>
+        <p>We are reliable Wedding Planner offering comprehensive wedding services to the clients. We have a team of wedding planners which understands the special requirements of the customers and plans events in accordance to it. Our wedding services are well-planned and organized starting from the pre marriage ceremony to the post marriage ceremony. The wedding service comprises successful execution of various events and rituals such as Deciding Venue, Designing of a theme , Designing and printing Invitations, Mandap Designing, Entertainment, Catering, Photography, Fireworks, Trousseau packing, Permissions and Licenses, Hotel and Car Bookings, Lighting and Floral Decor. Furthermore, being economical the Wedding Services offered by us are highly appreciated by the clients. Our Wedding Service is promptly executed.</p>
+        <h2>Services Include</h2>
+        <ul>
+            <li>Wedding Themes</li>
+            <li>Destination Wedding</li>
+            <li>Jaimala Themes</li>
+            <li>Bride & Groom Entry</li>
+            <li>Decor</li>
+            <li>Catering</li>
+            <li>DJ/Live Music</li>
+            <li>Light & Sound</li>
+        </ul>
+    </div>
+    <div class="main" style="width:22%; margin-left:2%; margin-right:10%; padding-top:0;padding-bottom:0;margin-left:45px;" ;>
+        <form action="Confirmation.html" method="get" target="_blank" onsubmit="SetCookies()">
+
+            <h3 style="color: rgb(238,232,170);text-align:center;">Request a Call Back</h3>
+            <input type="text" id="name" placeholder="Enter your Name" onkeypress="return((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 32))" required /><br />
+
+            <input type="tel" id="number" placeholder="Enter your Mobile" onkeypress="if ( isNaN( String.fromCharCode(event.keyCode) )) return false" required /><br />
+
+            <input type="email" id="email" placeholder="Enter your Email" required /><br />
+
+            <button id="btnConfirm" type="submit">Confirm</button>
+        </form>
+
+    </div>
+
+    <div class="bottom">
+        <p style="color:antiquewhite"> © 2019 - 2020 The Grand Epoch®</p>
+        <a href="https://www.facebook.com/grandepoch/"> <img src="images/fb.png" /></a>
+        <a href="https://www.instagram.com/epochgrand/?igshid=1w83tst1f9852"><img src="images/insta.png" /></a>
+    </div>
+</body>
+</html>

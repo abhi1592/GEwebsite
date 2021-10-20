@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="CSS/main.css">
+
+    <style>
+        .book {
+            margin-top: 55px;
+            border-style: solid;
+            border-width: 3px;
+            border-color: rgba(0,0,0,.2);
+            border-radius: 9px;
+            margin-left: 30%;
+            padding-left: 25px;
+            background-color: rgba(0,0,0,.5);
+            float: left;
+        }
+
+        .bottom {
+            margin-top: 975px;
+        }
+
+        .book label {
+            color: aliceblue;
+            font-weight: 200;
+        }
+
+        .book button {
+            background-color: red;
+            color: white;
+            -webkit-transition: all 0.6s ease;
+            -moz-transition: all 0.1s ease;
+            -ms-transition: all 0.1s ease;
+            transition: all 0.1s ease;
+            height: 33px;
+            width: 98px;
+            border: none;
+            border-radius: 7px;
+            margin-bottom: 12px;
+        }
+
+            .book button:hover {
+                height: 39px;
+                width: 104px;
+            }
+
+        .book input, select, textarea, button {
+            width: 90%;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+    <script type="text/javascript" src="Book.js"></script>
+   
+</head>
+            <body>
+                <div class="topnav" style=" position: relative;">
+                    <a style="float: right;" href="about.html">About</a>
+                    <a style="float: right;" href="contact.html">Contact Us</a>
+                    <a style="float: right;" href="job.html">Careers</a>
+                    <a style="float: right;" href="services.html">Our Services</a>
+
+                    <a style="float: right;" href="main.html">Home</a>
+                </div>
+                <div id="grand">
+                    <a href="main.html"><img src="images/grand.jpeg" ;" /></a>
+        </div>
+                <div class="book">
+                    <h1 style="color: rgb(238,232,170);padding-left:150px;">Book your event</h1>
+                    <img src="images/unnamed.jpg" style="width:90%; height:300px;" />
+                    <form action="Confirmation.html" method="get" target="_blank" onsubmit="SetCookies()" >
+
+                        <label>Name:*</label><br />
+                        <input type="text" id="name" placeholder="Enter your Name" onkeypress="return((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 32))" required /><br />
+                        <label>Phone:*</label><br />
+                        <input type="tel" id="number" placeholder="Mobile" onkeypress="if ( isNaN( String.fromCharCode(event.keyCode) )) return false" required /><br />
+                        <label>Email:*</label><br />
+                        <input type="email" id="email" placeholder="Enter your Email" required /><br />
+                        <label>Event:*</label><br />
+                        <select id="event" prefix="please choose..">
+                            <option>Corporate Events</option>
+                            <option>Dealership Meets</option>
+                            <option>Wedding</option>
+                            <option>Exhibition Events</option>
+                            <option>Birthday</option>
+                            <option>Retail</option>
+                        </select><br />
+                        <label>Message:</label><br />
+                        <textarea></textarea><br />
+                        <button id="btnConfirm" type="submit">Confirm</button>
+                    </form>
+                </div>
+
+                <br />
+                <div class="bottom">
+                    <p style="color:antiquewhite"> © 2019 - 2020 The Grand Epoch®</p>
+                    <a href="https://www.facebook.com/grandepoch/"> <img src="images/fb.png" /></a>
+                    <a href="https://www.instagram.com/epochgrand/?igshid=1w83tst1f9852"><img src="images/insta.png" /></a>
+                </div>
+            </body>
+</html >
